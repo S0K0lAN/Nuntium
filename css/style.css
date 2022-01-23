@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 25px 25px 0 25px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    outline: none !important;
+
+    background-color: transparent;
+}
+
+button:active, button:focus {
+    outline: none !important;
+}
+
+input {
+    outline: none;
+    border: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+
+/* Navigation bar */
+
+.header {
+    margin-bottom: 43px;
+}
+
+.header-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-navigation > img {
+    height: 57px;
+}
+
+.header-navigation__menu {
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 31px;
+}
+
+.header-navigation__menu > li {
+    list-style-type: none;
+
+    margin-right: 31px;
+}
+
+.header-navigation__menu > li > a {
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.header-navigation__search-field {
+    height: 46px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: auto;
+    padding: 8px 12px;
+
+    border: 2px solid #1C1C1C;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.header-navigation__search-field > input {
+    width: 85%;
+}
+
+.header-navigation__search-field > button {
+    margin-left: auto;
+}
+
+.header-navigation__search-field > button > img {
+    
+}
+
+.header-navigation__login-button {
+    width: 135px;
+    height: 46px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 21px;
+
+    border: 2px solid #1C1C1C;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;    
+    color: #1C1C1C;
+}
+
+
+
+/* Main */
+
+.main {
+    
+}
+
+.main__article-image {
+    margin-bottom: 50px;
+
+    padding: 0 0 109px 45px;
+
+    background-image: url("../images/ArticleImage.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article-image__card {
+    width: 509px;
+
+    padding: 76px 40px 96px 40px;
+
+    background-color: #fff;
+}
+
+.card__content {
+
+}
+
+.content__category {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: rgba(28, 28, 28, 0.5);
+}
+
+.content__title {
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 41px;
+    text-transform: capitalize;
+    color: #000000;
+
+    margin-bottom: 12px;
+}
+
+.content__info {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 14px;
+}
+
+.content__info > h5{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(28, 28, 28, 0.5);
+}
+
+.content__info > img {
+    margin: 0 10px;
+}
+
+.content__paragraph {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.main__editors-picks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editors-picks__line {
+    margin-bottom: 54px;
+}
+
+.editors-picks__title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 57px;
+    text-align: center;
+    color: #1C1C1C;
+}
+
+.editors-picks__articles-container {
+    margin: 0 250px;
+}
+
+.articles-container__card {
+    display: flex;
+
+    margin-bottom: 63px;
+}
+
+.articles-container__card > img {
+    margin-right: 55px;
+}
+
+
+
+/*Categories section*/
+
+
+
+.main__categories {
+
+}
+
+.categories__article-image {
+    padding-top: 54px;
+    padding-bottom: 55px;
+    padding-left: 700px;
+    
+    background-image: url("../images/fern.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+/*
+
+@media screen and (max-width: 720px) {
+
+
+
+    .article-image__card {
+        padding: 0;
+        
+
+        width: 200px;
+    }
+    
+    .content__paragraph {
+        display: none;
+    }
+    
+    .header-navigation__menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header-navigation__search-field {
+        padding: 0;
+
+        border: 0;
+    }
+
+    .header-navigation__search-field input {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .articles-container__card {
+        flex-direction: column;
+    }
+     
+    .articles-container__card > img {
+        margin-bottom: 20px;
+    }
+
+    .main__article-image {
+        padding-left: 20px;
+    }
+
+    .categories__article-image {
+        margin: 0;
+        padding-left: 20px;
+    }
+}
+
+*/
